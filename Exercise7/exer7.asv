@@ -1,0 +1,22 @@
+%% input
+d1 = input("Enter the first diagonals: ");
+if (d1 <= 0 )
+    d1 = input("Diagonals must be larger than !!Enter the first diagonals again: ");
+end
+
+d2 = input("Enter the second diagonals: ");
+if ( d2 <= 0 )
+    d2 = input("Diagonals must be larger than 0!! Enter the second diagonals again: ");
+end
+
+%% calculate
+a = rhombus(d1,d2);
+
+%% results
+fprintf("The area og a rhombus:%f \n", a);
+
+%% function
+function A = rhombus(d1,d2)
+   A = d1*d2/2;
+
+end
